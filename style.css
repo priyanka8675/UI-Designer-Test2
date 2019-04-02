@@ -1,0 +1,109 @@
+* { margin:0; padding:0; font-family:arial;}
+section {
+    border-top: 3px solid #bfceb7;
+}
+.main {
+    max-width: 1170px;
+    margin: auto;
+    padding-top: 0;
+    clear: both;
+}
+header {box-shadow: 0px 1px 3px #ccc;}
+.header {
+    width: 100%;
+    padding: 7px 0 3px 0;
+    max-width: 1170px;
+    margin: auto;
+    clear: both;
+}
+
+.header form { float:right; padding-top:25px;}
+.title {clear: both; float:left; width:100%;}
+.title h1 {
+    text-align: center;
+    margin: 40px 0 30px 0;
+    background-image: url(../images/title-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
+    padding: 40px 0;
+    color: #ff7297;
+    font-size: 35px;
+    width: 80%;
+    float: left;
+}
+.title button {
+    background: none;
+    border: 1px solid #ccc;
+    width: 10%;
+    float: right;
+    max-width: 70px;
+    outline: 0;
+    margin-top: 95px;
+    padding: 5px;
+    border-radius: 4px;
+}
+.title button img {vertical-align: middle;
+    margin-left: 3px;
+    width: 20px;}
+#myInput {
+    background-image: url(../images/search.png);
+    background-position-y: center;
+    background-position-x: 9px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: 200px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL li { float:left; width:18%; padding:1%;}
+#myUL li img { width:100%; border:1px solid #ccc;}
+#myUL li a {
+  background-color: #f6f6f6;
+  padding: 12px 0;
+  text-align:center;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+@media (max-width:768px) {
+	.main {float:left;}
+	#myUL li { width:48%;}
+	.header a img {max-width:70px;}
+	#myInput {width:150px; padding: 12px 10px 12px 35px;}
+	.header {padding: 7px 0px 3px 0px; float:left; width:100%;}
+	.logo { float:left;     padding-left: 5px;}
+	header {float: left; width: 100%;}
+	.header form {padding-top: 12px;    padding-right: 7px;}
+	.title h1 {width:77%;}
+	.title button {    margin-right: 7px;    width: 20%;}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
