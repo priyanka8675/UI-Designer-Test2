@@ -13,9 +13,23 @@
 <header>
 <div class="header">
 <a class="logo" href="index.html"><img src="images/logo.png" /></a>
+
+
+
+
 <form>
+
+<select>
+<option value="box">Sort By</option>
+<option value="red">Red</option>
+<option value="green">Green</option>
+<option value="blue">Blue</option>
+</select>
+
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Search Here...">
 </form>
+
+
 </div>
 </header>
 
@@ -23,57 +37,56 @@
 
 <div class="title">
 <h1>Welcome to Floral Shop</h1>
-<button onclick="sortListDir()">Sort <img src="images/sort.png" /></button>
 </div>
 
 
 <ul class="listmain" id="myUL">
-<li>
+<li class="blue box">
 <img src="images/photo1.png" />
 <a>Cherry Blossom</a>
 </li>
 
-<li>
+<li class="blue box">
 <img src="images/photo2.jpg" />
 <a>Dahlia</a>
 </li>
 
-<li>
+<li class="blue box">
 <img src="images/photo3.jpg" />
 <a>Bleeding Heart</a>
 </li>
 
-<li>
+<li class="blue box">
 <img src="images/photo4.jpg" />
 <a>Canna</a>
 </li>
 
-<li>
+<li class="green box">
 <img src="images/photo5.jpg" />
 <a>Tulip</a>
 </li>
 
-<li>
+<li class="green box">
 <img src="images/photo6.jpg" />
 <a>White Lotus</a>
 </li>
 
-<li>
+<li class="green box">
 <img src="images/photo7.jpg" />
 <a>Oriental Poppy</a>
 </li>
 
-<li>
+<li class="red box">
 <img src="images/photo8.jpg" />
 <a>Plumeria</a>
 </li>
 
-<li>
+<li class="red box">
 <img src="images/photo9.jpg" />
 <a>Lily of the Valley</a>
 </li>
 
-<li>
+<li class="red box">
 <img src="images/photo10.jpg" />
 <a>Rose</a>
 </li>
@@ -83,27 +96,7 @@
 </div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="js/javascript.js"></script>
 </body>
 </html>
