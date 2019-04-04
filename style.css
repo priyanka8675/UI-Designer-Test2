@@ -29,7 +29,7 @@ header {box-shadow: 0px 1px 3px #ccc;}
     padding: 40px 0;
     color: #ff7297;
     font-size: 35px;
-    width: 80%;
+    width: 100%;
     float: left;
 }
 .title button {
@@ -80,30 +80,49 @@ header {box-shadow: 0px 1px 3px #ccc;}
   background-color: #eee;
 }
 
+select {    padding: 12px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    outline: 0;
+    user-select: none; border:3px solid transparent; background-color:#eee; border-radius:3px;}
+
+select:focus {border:3px solid #ccc;}	
+
+
 @media (max-width:768px) {
 	.main {float:left;}
 	#myUL li { width:48%;}
-	.header a img {max-width:70px;}
+	
 	#myInput {width:150px; padding: 12px 10px 12px 35px;}
 	.header {padding: 7px 0px 3px 0px; float:left; width:100%;}
-	.logo { float:left;     padding-left: 5px;}
+	
 	header {float: left; width: 100%;}
-	.header form {padding-top: 12px;    padding-right: 7px;}
-	.title h1 {width:77%;}
-	.title button {    margin-right: 7px;    width: 20%;}
+	.header form {}
+	.title h1 {width:100%;}
 	}
 
+@media (max-width:425px) and (min-width:320px) {
+	.header a img {
+    max-width: 70px;
+    margin: auto;
+}
+.logo {
+    float: left;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.header form {
+    float: none;
+    text-align: center;
+	clear: both;
+    padding-top: 8px;
+}
+	.header form select {float:none;}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width:768px) and (max-width:1024px) {
+	.header {
+    width: 98%;}	
+}
